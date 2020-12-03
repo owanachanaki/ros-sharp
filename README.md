@@ -5,7 +5,7 @@
 [Here](https://github.com/siemens/ros-sharp/wiki/Info_Showcases) are some showcases illustrating what can be done with ROS#.
 Community provided a variety of other application examples for ROS# [here](https://github.com/siemens/ros-sharp/issues/20). Please don't hesitate to post yours!
 
-### UWP Compatibility ###
+## UWP Compatibility ##
 * The guide line on how to recreate this fork was detailed in dwhit's [fork](https://github.com/dwhit/ros-sharp)
 * This rossharp version was built from the latest stable version of rossharp, [v1.6](https://github.com/siemens/ros-sharp/releases/tag/v1.6)
 
