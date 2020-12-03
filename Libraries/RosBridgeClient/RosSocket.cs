@@ -61,16 +61,16 @@ namespace RosSharp.RosBridgeClient
                 UnadvertiseService(ServiceProviders.First().Key);
 
             // Service consumers do not stay on. So nothing to unsubscribe/unadvertise
-
+#if !WINDOWS_UWP
             if (isAnyCommunicatorActive)
             {
                 Thread.Sleep(millisecondsWait);
             }
-
+#endif
             protocol.Close();
         }
 
-        #region Publishers
+#region Publishers
 
         public string Advertise<T>(string topic) where T : Message
         {
@@ -94,9 +94,9 @@ namespace RosSharp.RosBridgeClient
             Publishers.Remove(id);
         }
 
-        #endregion
+#endregion
 
-        #region Subscribers
+#region Subscribers
 
         public string Subscribe<T>(string topic, SubscriptionHandler<T> subscriptionHandler, int throttle_rate = 0, int queue_length = 1, int fragment_size = int.MaxValue, string compression = "none") where T : Message
         {
@@ -117,9 +117,9 @@ namespace RosSharp.RosBridgeClient
             Send(Subscribers[id].Unsubscribe());
             Subscribers.Remove(id);
         }
-        #endregion
+#endregion
 
-        #region ServiceProviders
+#region ServiceProviders
 
         public string AdvertiseService<Tin, Tout>(string service, ServiceCallHandler<Tin, Tout> serviceCallHandler) where Tin : Message where Tout : Message
         {
@@ -139,9 +139,9 @@ namespace RosSharp.RosBridgeClient
             ServiceProviders.Remove(id);
         }
 
-        #endregion
+#endregion
 
-        #region ServiceConsumers
+#region ServiceConsumers
 
         public string CallService<Tin, Tout>(string service, ServiceResponseHandler<Tout> serviceResponseHandler, Tin serviceArguments) where Tin : Message where Tout : Message
         {
@@ -152,7 +152,7 @@ namespace RosSharp.RosBridgeClient
             return id;
         }
 
-        #endregion
+#endregion
 
         private void Send<T>(T communication) where T : Communication
         {
@@ -166,7 +166,7 @@ namespace RosSharp.RosBridgeClient
         private void Receive(object sender, EventArgs e)
         {
             JObject jObject = Deserialize<JObject>(((MessageEventArgs)e).RawData);
-#if DEBUG            
+#if DEBUG
             Console.WriteLine("Received:\n" + JsonConvert.SerializeObject(jObject, Formatting.Indented) + "\n");
 #endif
             switch (jObject.GetValue("op").ToString())

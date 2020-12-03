@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -161,9 +162,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 140737614}
 --- !u!1 &21913580
 GameObject:
@@ -465,9 +466,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1719759773}
 --- !u!1 &52536698
 GameObject:
@@ -494,8 +495,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52536698}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1166,9 +1168,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1269677396}
 --- !u!1 &243279449
 GameObject:
@@ -1211,9 +1213,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 391948692}
 --- !u!1001 &246193658
 PrefabInstance:
@@ -1450,9 +1452,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1805982325}
 --- !u!1 &278134000
 GameObject:
@@ -2096,9 +2098,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1080366260}
 --- !u!4 &371535062
 Transform:
@@ -4729,9 +4731,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1636993652}
 --- !u!1 &667351857
 GameObject:
@@ -5550,9 +5552,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 2072596655}
 --- !u!1 &712417781
 GameObject:
@@ -6930,9 +6932,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1455503413}
 --- !u!1 &894933993
 GameObject:
@@ -7676,9 +7678,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1675514551}
 --- !u!1 &911599275
 GameObject:
@@ -8013,9 +8015,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1278080548}
 --- !u!1 &973721514
 GameObject:
@@ -8752,9 +8754,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 669438093}
 --- !u!1 &1046376709
 GameObject:
@@ -8843,9 +8845,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 779861254}
 --- !u!1 &1056247498
 GameObject:
@@ -9061,9 +9063,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 878985030}
 --- !u!43 &1080366260
 Mesh:
@@ -10198,9 +10200,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 639233247}
 --- !u!1 &1240100036
 GameObject:
@@ -10420,9 +10422,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 2045215494}
 --- !u!1 &1263878498
 GameObject:
@@ -10999,9 +11001,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1923480612}
 --- !u!1 &1294891240
 GameObject:
@@ -11682,9 +11684,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1277592027}
 --- !u!1 &1364847178
 GameObject:
@@ -13582,9 +13584,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1026669356}
 --- !u!1 &1654614854
 GameObject:
@@ -13830,10 +13832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PluginText: "<gazebo reference=\"base_link\">\r\n  <mu1>0.3</mu1>\r\n  <mu2>0.3</mu2>\r\n
-    <sensor name=\"bumpers\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n  
-    <update_rate>50.0</update_rate>\r\n    <visualize>true</visualize>\r\n    <contact>\r\n    
-    <collision>base_footprint_fixed_joint_lump__base_collision</collision>\r\n  
+  PluginText: "<gazebo reference=\"base_link\">\r\n  <mu1>0.3</mu1>\r\n  <mu2>0.3</mu2>\r\n<sensor
+    name=\"bumpers\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   <update_rate>50.0</update_rate>\r\n   
+    <visualize>true</visualize>\r\n    <contact>\r\n     <collision>base_footprint_fixed_joint_lump__base_collision</collision>\r\n  
     </contact>\r\n  </sensor>\r\n</gazebo>"
 --- !u!114 &1663479436
 MonoBehaviour:
@@ -13847,8 +13848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PluginText: "<gazebo reference=\"caster_back_link\">\r\n  <mu1>0.0</mu1>\r\n  <mu2>0.0</mu2>\r\n
-    <kp>1000000.0</kp>\r\n  <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
+  PluginText: "<gazebo reference=\"caster_back_link\">\r\n  <mu1>0.0</mu1>\r\n  <mu2>0.0</mu2>\r\n<kp>1000000.0</kp>\r\n 
+    <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
 --- !u!114 &1663479437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13876,8 +13877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PluginText: "<gazebo reference=\"wheel_right_link\">\r\n  <mu1>1.0</mu1>\r\n  <mu2>1.0</mu2>\r\n
-    <kp>1000000.0</kp>\r\n  <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
+  PluginText: "<gazebo reference=\"wheel_right_link\">\r\n  <mu1>1.0</mu1>\r\n  <mu2>1.0</mu2>\r\n<kp>1000000.0</kp>\r\n 
+    <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
 --- !u!114 &1663479439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13890,8 +13891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PluginText: "<gazebo reference=\"wheel_left_link\">\r\n  <mu1>1.0</mu1>\r\n  <mu2>1.0</mu2>\r\n
-    <kp>1000000.0</kp>\r\n  <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
+  PluginText: "<gazebo reference=\"wheel_left_link\">\r\n  <mu1>1.0</mu1>\r\n  <mu2>1.0</mu2>\r\n<kp>1000000.0</kp>\r\n 
+    <kd>100.0</kd>\r\n  <minDepth>0.001</minDepth>\r\n  <maxVel>1.0</maxVel>\r\n</gazebo>"
 --- !u!114 &1663479440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14169,9 +14170,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 430067084}
 --- !u!1001 &1684802810
 PrefabInstance:
@@ -15400,9 +15401,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 901810566}
 --- !u!1001 &1892021833
 PrefabInstance:
@@ -16230,9 +16231,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1041781293}
 --- !u!1 &1944999080
 GameObject:
@@ -16700,9 +16701,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 1215270928}
 --- !u!1 &2025930223
 GameObject:
@@ -17417,9 +17418,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 682772938}
 --- !u!1 &2077602878
 GameObject:
