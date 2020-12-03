@@ -5,6 +5,18 @@
 [Here](https://github.com/siemens/ros-sharp/wiki/Info_Showcases) are some showcases illustrating what can be done with ROS#.
 Community provided a variety of other application examples for ROS# [here](https://github.com/siemens/ros-sharp/issues/20). Please don't hesitate to post yours!
 
+### UWP Compatibility ###
+* The guide line on how to recreate this fork was detailed in dwhit's [fork](https://github.com/dwhit/ros-sharp)
+* This rossharp version was built from the latest stable version of rossharp, [v1.6](https://github.com/siemens/ros-sharp/releases/tag/v1.6)
+
+## How to get started ##
+* Step 1: Clone this project
+* Step 2: Create a new Unity project and copy everything in Unity3D/Assets/RosSharp folder into your project's Assets folder
+* Step 3: After adding RosSharp into Asset Folder, import JSON .NET for Unity from Asset Store
+https://assetstore.unity.com/packages/tools/input-management/json-net-for-unity-1134
+* Step 4: Disable the Newtonsoft.Json in RosSharp/Plugins folder for all platform. This can be done in Unity, by opening the file in the Plugins folder and untick the options for all platforms.
+* Step 5: Construct your Unity scene with the examples from the [wiki](https://github.com/siemens/ros-sharp/wiki)
+
 ## Recent Changes ##
 
 #### Automatic Message Generation: ####
@@ -51,7 +63,7 @@ In addition to the source code, [Releases](https://github.com/siemens/ros-sharp/
   * to be imported in other Unity projects using ROS#.
 * binaries of [RosBridgeClient](https://github.com/siemens/ros-sharp/tree/master/Libraries/RosBridgeClient) and [Urdf](https://github.com/siemens/ros-sharp/tree/master/Libraries/Urdf)
   * to be used in other .NET projects using these libraries.
-
+ 
 The latest release is also being published in the [Unity Asset Store](https://assetstore.unity.com/packages/tools/physics/ros-ros-unity-communication-package-107085).
 
 Please get the latest development version directly from the [tip of this master branch](https://github.com/siemens/ros-sharp).
@@ -71,11 +83,10 @@ ROS# is open source under the [Apache 2.0 license](http://www.apache.org/license
 
 * [ROS#](https://github.com/siemens/ros-sharp) is developed for Windows and has successfully been used on a variety of other platforms community members.
 
-* The [RosSharp](https://github.com/siemens/ros-sharp/tree/master/Libraries/) Visual Studio solution requires .NET Framework 4.6 and Visual Studio 2017.
+* The [RosSharp](https://github.com/siemens/ros-sharp/tree/master/Libraries/) Visual Studio solution requires .NET Framework 4.6.1 and Visual Studio 2019.
 * The Unity Project [Unity3D](https://github.com/siemens/ros-sharp/tree/master/Unity3D) requires Unity Version 2018.3 and higher.
 In Versions below 2019.3, make sure to set the scripting runtime version to `.NET 4.x Equivalent` ([see Wiki page](https://github.com/siemens/ros-sharp/wiki/User_Inst_Unity3DOnWindows)).
 
-* Please find a UWP version of ROS# [here](https://github.com/dwhit/ros-sharp).
 * Please find a .NET Standard 2.0 version of UrdfImporter [here](https://github.com/blommers/UdrfImporter).
 
 ## Further Info ##
